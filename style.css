@@ -398,4 +398,32 @@ main{
         flex-direction: column;
         background-color: var(--White);
     }
+    .nav_links:hover::after{
+        bottom: -15px;
+    }
+    .active{
+        display: flex;
+    }
+    .nav_link{
+        height: fit-content;
+        font-weight: 700;
+        color: var(--Black);
+    }
+    .nav_right-sec{
+        gap: 1.5rem;
+    }
+    .avatar{
+        width: 36px;
+    }
+    /* main */
+    main{
+        flex-direction: column;
+        align-items: center;
+        margin-inline: 0;
+        height: 100%;
+        margin-bottom: 4rem;
+    }
+    .thumbnails{
+        height: 40%;
+    }
 }

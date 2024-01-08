@@ -426,4 +426,8 @@ main{
     .thumbnails{
         height: 40%;
     }
+    .content{
+        margin: 2rem;
+        height: 50%;
+    }
 }

@@ -480,7 +480,7 @@ main{
     }
     #previous{
         position: absolute;
-        left: 10%;
+        right: 10%;
         top: 50%;
         border: none;
         background-color: var(--White);

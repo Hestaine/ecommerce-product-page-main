@@ -366,6 +366,7 @@ main{
     /* default */
     body{
         position: relative;
+        padding-bottom: 2rem;
     }
     /* navbar */
     .nav_container{
@@ -447,7 +448,8 @@ main{
         display: flex;
         overflow: hidden;
         min-height: 95vw;
-        margin-top: -.5rem;
+        margin-top: .5rem;
+        margin-bottom: 3.5rem;
         z-index: 1;
     }
     .mobile-thumb img{
@@ -485,6 +487,7 @@ main{
         height: 50px;
         display: flex;
         justify-content: center;
+        font-size: 5px;
         align-items: center;
         border-radius: 50%;
         text-align: center;
@@ -501,6 +504,7 @@ main{
         height: 50px;
         display: flex;
         justify-content: center;
+        font-size: 5px;
         align-items: center;
         border-radius: 50%;
         text-align: center;

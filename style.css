@@ -277,6 +277,15 @@ main{
     width: 100%;
     margin-top: 2rem;
 }
+.amount-btn{
+    background-color: var(--Light-grayish-blue);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 35%;
+    border-radius: 7px;
+    justify-content: space-between;
+}
 .amount-btn button{
     background-color: transparent;
     border: none;
@@ -342,7 +351,7 @@ main{
     width: 20px;
     height: 20px;
 }
-.lightbox .male-thumbnail{
+.lightbox .main-thumbnail{
     width: 400px;
 }
 
@@ -461,6 +470,10 @@ main{
     }
     .amount-btn{
         width: 100%;
+    }
+    .add_btn{
+        width: 100%;
+        margin-left: 0;
     }
     #next{
         position: absolute;

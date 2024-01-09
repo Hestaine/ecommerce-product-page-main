@@ -355,7 +355,7 @@ main{
     width: 400px;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (max-width: 599.1){
     .content{
         margin-top: 2rem;
     }

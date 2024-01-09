@@ -346,7 +346,7 @@ main{
     width: 400px;
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width: 700px){
     /* visibility */
     .hidden{
         display: flex;
@@ -430,4 +430,24 @@ main{
         margin: 2rem;
         height: 50%;
     }
+    .preview{
+        display: none;
+    }
+    .mobile-thumb{
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        min-height: 95vw;
+        margin-top: -.5rem;
+        z-index: 1;
+    }
+    .mobile-thumb img{
+        object-fit: cover;
+        width: 100%;
+        z-index: 1;
+    }
+    .title{
+        font-size: 2.2rem;
+    }
+    .p
 }

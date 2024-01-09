@@ -438,7 +438,7 @@ main{
     }
     .content{
         margin: 2rem;
-        margin-top: 6rem;
+        margin-top: 14rem;
         height: 50%;
     }
     .preview{
@@ -463,7 +463,7 @@ main{
         font-size: 2.2rem;
     }
     .price{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 1rem;
     }
@@ -519,5 +519,6 @@ main{
 @media screen and (min-width: 600px){
     .content{
         
+        margin-top: 3.5rem;
     }
 }

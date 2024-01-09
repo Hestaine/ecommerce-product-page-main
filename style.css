@@ -449,5 +449,33 @@ main{
     .title{
         font-size: 2.2rem;
     }
-    .p
+    .price{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .amount-btn{
+        width: 100%;
+    }
+    #next{
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        border: none;
+        background-color: var(--White);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        z-index: ;
+    }
 }

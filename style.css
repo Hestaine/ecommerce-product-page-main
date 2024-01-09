@@ -476,6 +476,6 @@ main{
         border-radius: 50%;
         text-align: center;
         cursor: pointer;
-        z-index: ;
+        z-index: 10;
     }
 }

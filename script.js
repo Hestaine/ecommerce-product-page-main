@@ -24,6 +24,7 @@ const wrp = document.querySelector(".cart-content");
 let amountValue = 0;
 let currentImg = 1;
 
+
 indicator.style.display = "none";
 function openMenu() {
   menu.classList.add("active");
@@ -127,7 +128,11 @@ images.forEach((image) => {
 
 menuBtn.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", closeMenu);
-plusBtn.addEventListener("click", handlePlus);
 minusBtn.addEventListener("click", handleMinus);
+plusBtn.addEventListener("click", handlePlus);
 nextBtn.addEventListener("click", nextImage);
 prevBtn.addEventListener("click", prevImage);
+cartBtn.addEventListener("click", toggleCart);
+closeLightboxBtn.addEventListener("click", closeLightBox);
+mainThumbnail.addEventListener("click", openLightBox);
+addBtn.addEventListener("click", addItem);

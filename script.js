@@ -24,12 +24,10 @@ const wrp = document.querySelector(".cart-content");
 let amountValue = 0;
 let currentImg = 1;
 
-console.log(closeBtn)
-
 indicator.style.display = "none";
 function openMenu() {
   menu.classList.add("active");
-  overlay.classList.remove("active");
+  overlay.classList.add("active");
 }
 function closeMenu() {
   menu.classList.remove("active");
@@ -43,25 +41,23 @@ function handleMinus() {
   if (amountValue > 0) {
     amountValue--;
   }
-  amount.innerText = amountValue
+  amount.innerText = amountValue;
 }
 function nextImage() {
   if (currentImg == 4) {
     currentImg = 1;
-  }
-  else {
+  } else {
     currentImg++;
   }
-  thumbMob.src = `./images/image-product-${currentImg}.jpg`
+  thumbMob.src = `./images/image-product-${currentImg}.jpg`;
 }
 function prevImage() {
   if (currentImg == 1) {
     currentImg = 4;
-  }
-  else {
+  } else {
     currentImg--;
   }
-  thumbMob.src = `./images/image-product-${currentImg}.jpg`
+  thumbMob.src = `./images/image-product-${currentImg}.jpg`;
 }
 function toggleCart() {
   cart.classList.toggle("invisible");
@@ -73,31 +69,30 @@ function openLightBox() {
   lightbox.classList.remove("invisible");
 }
 function addItem() {
-  if (amountValue > 0) {
-    const total = 125.00 * amountValue;
+    if (amountValue > 0) {
+        const total = 125.00 * amountValue;
     wrp.classList.remove("empty");
-    wrp.innerHTML = `
-    <div class="product">
-      <div>
-        <img src="./images/image-product-1-thumbnail.jpg" class="product-img" alt="product">
-      <div class="product-info">
-        <p class="product-title">Fall Limited Edition Sneakers</p>
-       <p><span>$125.00</span> × <span class="number">${amountValue} = </span> <b>$${total}</b></p>
-      </div>
-      <button class="delete-btn" onclick="deleteItem()"><img src="./images/icon-delete.svg" alt="delete"></button>
-      </div>
-      <button class="checkout-btn">Checkout</button>
-    </div>
-  `
-  indicator.style.display = "block";
-  indicator.innerText = amountValue;
+    wrp.innerHTML = `<div class="product">
+                    <div>
+                      <img src="./images/image-product-1-thumbnail.jpg" class="product-img" alt="product">
+                      <div class="product-info">
+                        <p class="product-title">Fall Limited Edition Sneakers</p>
+                       <p><span>$125.00</span> × <span class="number">${amountValue}</span> <b>$${total}</b></p>
+                      </div>
+                      <button class="delete-btn" onclick="deleteItem()"><img src="./images/icon-delete.svg" alt="delete"></button>
+                    </div>
+                    <button class="checkout-btn">Checkout</button>
+                  </div>`;
+    indicator.style.display = "block";
+    indicator.innerText = amountValue;
   }
 }
 function deleteItem() {
-  wrp.classList.add("empty");
-  wrp.innerHTML = `<p>Your cart is empty</p>`;
-  indicator.style.display = "none"
+    wrp.classList.add("empty");
+    wrp.innerHTML = `<p>Your cart is empty</p>`;
+    indicator.style.display = "none";
 }
+
 images.forEach((image) => {
   image.addEventListener("click", () => {
     const lastImg = document.querySelectorAll(".selected");
@@ -105,7 +100,7 @@ images.forEach((image) => {
       lastImg[0].classList.remove("selected");
     }
     image.classList.add("selected");
-    const selectedImg = document.querySelector("selected");
+    const selectedImg = document.querySelector(".selected");
     switch (selectedImg.getAttribute("src")) {
       case "./images/image-product-1-thumbnail.jpg":
         mainThumbnail.src = "./images/image-product-1.jpg";
@@ -124,13 +119,13 @@ images.forEach((image) => {
         mainThumbnailLightBox.src = "./images/image-product-4.jpg";
         break;
     }
-  })
-})
+  });
+});
 
 menuBtn.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", closeMenu);
-minusBtn.addEventListener("click", handleMinus);
 plusBtn.addEventListener("click", handlePlus);
+minusBtn.addEventListener("click", handleMinus);
 nextBtn.addEventListener("click", nextImage);
 prevBtn.addEventListener("click", prevImage);
 cartBtn.addEventListener("click", toggleCart);

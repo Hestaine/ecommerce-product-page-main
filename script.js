@@ -21,3 +21,4 @@ const lightbox = document.querySelector(".lightbox");
 const addBtn = document.querySelector(".add_btn");
 const indicator = document.querySelector(".indicator");
 const wrp = document.querySelector(".cart-content");
+

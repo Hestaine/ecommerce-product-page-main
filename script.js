@@ -24,6 +24,7 @@ const wrp = document.querySelector(".cart-content");
 let amountValue = 0;
 let currentImg = 1;
 
+console.log(closeBtn)
 
 indicator.style.display = "none";
 function openMenu() {
@@ -31,7 +32,7 @@ function openMenu() {
   overlay.classList.remove("active");
 }
 function closeMenu() {
-  menu.classList.remoce("active");
+  menu.classList.remove("active");
   overlay.classList.remove("active");
 }
 function handlePlus() {
@@ -81,7 +82,7 @@ function addItem() {
         <img src="./images/image-product-1-thumbnail.jpg" class="product-img" alt="product">
       <div class="product-info">
         <p class="product-title">Fall Limited Edition Sneakers</p>
-       <p><span>$125.00</span> × <span class="number">${amountValue}</span> <b>$${total}</b></p>
+       <p><span>$125.00</span> × <span class="number">${amountValue} = </span> <b>$${total}</b></p>
       </div>
       <button class="delete-btn" onclick="deleteItem()"><img src="./images/icon-delete.svg" alt="delete"></button>
       </div>

@@ -69,8 +69,8 @@ function openLightBox() {
   lightbox.classList.remove("invisible");
 }
 function addItem() {
-    if (amountValue > 0) {
-        const total = 125.00 * amountValue;
+  if (amountValue > 0) {
+    const total = 125.0 * amountValue;
     wrp.classList.remove("empty");
     wrp.innerHTML = `<div class="product">
                     <div>
@@ -88,9 +88,9 @@ function addItem() {
   }
 }
 function deleteItem() {
-    wrp.classList.add("empty");
-    wrp.innerHTML = `<p>Your cart is empty</p>`;
-    indicator.style.display = "none";
+  wrp.classList.add("empty");
+  wrp.innerHTML = `<p>Your cart is empty</p>`;
+  indicator.style.display = "none";
 }
 
 images.forEach((image) => {
